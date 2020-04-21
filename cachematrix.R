@@ -78,12 +78,12 @@ cacheSolve <- function(x, ...) {
         ## non-zero determinant, the inverse matrix will be calculated and 
         ## stored in cache. 
     }else{
-        m <- c(print("Inverse matrix is not possible for one of the following 
-                     reasons:"),
+        m <- c(print("Inverse matrix is not possible for one of the following reasons:"),
                print("1. The matrix is not square matrix"),
                print("2. The determinat of the matrix is zero"),
                print("3. The matrix contains character value"))
         x$setinverse(m)
+        ## if inverse matrix is not possible this section will be executed.
     }
     
 }
